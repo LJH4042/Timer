@@ -1,0 +1,82 @@
+body {
+  background: linear-gradient(to right bottom, darkkhaki, white);
+}
+
+.timerDiv {
+  margin: 100px 100px 100px 500px;
+  padding: 100px;
+  border: 10px double rgb(231, 222, 87);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  background-color: rgb(241, 241, 247);
+  box-shadow: 10px 10px 0px 0px rgb(236, 174, 16);
+}
+
+.timerTrueDiv {
+  font-size: 25px;
+  margin-top: 60px;
+}
+
+.timerFalseDiv {
+  margin-top: 60px;
+  font-size: 25px;
+}
+
+.timerControlButton {
+  display: flex;
+}
+
+.timerInputDiv {
+  display: flex;
+  margin-left: 5px;
+}
+
+.timerHourInput {
+  width: 85px;
+  height: 25px;
+}
+
+.timerMinutsInput {
+  margin-left: 10px;
+  width: 85px;
+  height: 25px;
+}
+
+.timerSecondInput {
+  margin-left: 10px;
+  width: 85px;
+  height: 25px;
+}
+
+.timerStartButton {
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  background-color: darkorange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.timerStopButton,
+.timerResetButton {
+  width: 130px;
+  height: 40px;
+  font-size: 20px;
+  margin: 20px 0px 0px 15px;
+  font-weight: bold;
+  background-color: darkorange;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.timerStartButton:hover,
+.timerStopButton:hover,
+.timerResetButton:hover {
+  border: 8px solid rgb(255, 179, 36);
+}
