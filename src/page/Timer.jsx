@@ -12,6 +12,10 @@ function Timer() {
   const [minuts, setMinuts] = useState(0)
   const [hour, setHour] = useState(0)
 
+  const [recodeSecond, setRecodeSecond] = useState(0)
+  const [recodeMinute, setRecodeMinure] = useState(0)
+  const [recodeHour, setRecodeHour] = useState(0)
+
   const [secondInput, setSecondInput] = useState()
   const [minutsInput, setMinutsInput] = useState()
   const [hourInput, setHourInput] = useState()
@@ -72,6 +76,9 @@ function Timer() {
       setSecond(secondInput)
       setMinuts(minutsInput)
       setHour(hourInput)
+      setRecodeSecond(secondInput)
+      setRecodeMinure(minutsInput)
+      setRecodeHour(hourInput)
     }
   }
   const timeStop = () => {
@@ -129,6 +136,11 @@ function Timer() {
       ) : (
         <div className="timerFalseDiv">
           <div>{startView ? <h1>00 : 00 : 00</h1> : <h1>TIME OUT!!!</h1>}</div>
+          <div>
+            {!startView && (
+              <p>Recode - {`${recodeHour}h : ${recodeMinute}m : ${recodeSecond}s`}</p>
+            )}
+          </div>
           <div>
             <div className="timerInputDiv">
               <Input
